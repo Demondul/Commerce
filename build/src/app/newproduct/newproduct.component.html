@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="header">
+        <h2>New Product</h2>
+    </div>
+    <div class="container">
+        <form (submit)="addProduct()">
+            <div class="col-md-2 inline-div">
+                <span class="col-form-label"> Name : </span>
+            </div>
+            <div class="col-md-5 inline-div">
+                <input type="text" class="form form-control" [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}" name="name">
+            </div>
+            <div class="col-md-5 inline-div">
+                <!-- <span *ngIf="errMessage['name']" class="alert alert-danger"> {{errMessage['name']['message']}} </span> -->
+            </div>
+            <br>
+            <div class="col-md-2 inline-div">
+                <span class="col-form-label"> Quantity : </span>
+            </div>
+            <div class="col-md-5 inline-div">
+                <input type="text" class="form form-control" [(ngModel)]="product.quantity" [ngModelOptions]="{standalone: true}" name="type">
+            </div>
+            <div class="col-md-5 inline-div">
+                <!-- <span *ngIf="errMessage.quantity" class="alert alert-danger"> {{errMessage.quantity.message}} </span> -->
+            </div>
+            <br>
+            <div class="col-md-2 inline-div">
+                <span class="col-form-label">Price : </span>
+            </div>
+            <div class="col-md-5 inline-div">
+                <input type="text" class="form form-control" [(ngModel)]="product.price" [ngModelOptions]="{standalone: true}" name="desc">
+            </div>
+            <div class="col-md-5 inline-div">
+                <!-- <span *ngIf="errMessage.price" class="alert alert-danger"> {{errMessage.price.message}} </span> -->
+            </div>
+            <br>
+            <div class="col-md-10 inline-div">
+                <div class="col-md-3 inline-div"></div>
+                <div class="col-md-3 inline-div">
+                    <input type="submit" class="btn form-control btn-primary" value="Create">
+                </div>
+                <div class="col-md-3 inline-div">
+                    <a (click)="reset()" class="btn form-control btn-primary">Reset</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

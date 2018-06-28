@@ -1,0 +1,10 @@
+.inline-div{
+  display: inline-block;
+}
+.table div{
+  margin: 0px;
+  padding: 0px;
+}
+.comp-div{
+  border: 2px solid black;
+}

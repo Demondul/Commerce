@@ -1,0 +1,23 @@
+/* *{
+  padding: 0px;
+  margin: 0px;
+} */
+/* div{
+  border: dotted 1px black;
+} */
+.header{
+  width: 100%;
+}
+.inline-div{
+  display: inline-block;
+}
+.btn-prod{
+  color: linear-gradient(#a0e2de, #2c5c59);
+}
+.table div{
+  padding: 0px;
+  margin: 0px;
+}
+div{
+  vertical-align: top;
+}

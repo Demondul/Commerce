@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="header">
+      <h2>New Product</h2>
+  </div>
+  <div class="container">
+      <form (submit)="saveProduct()">
+          <div class="col-md-3 inline-div">
+              <span class="col-form-label"> Name : </span>
+          </div>
+          <div class="col-md-6 inline-div">
+              <input type="text" class="form form-control" [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}" name="name">
+          </div><br>
+          <div class="col-md-3 inline-div">
+              <span class="col-form-label"> Quantity : </span>
+          </div>
+          <div class="col-md-6 inline-div">
+              <input type="text" class="form form-control" [(ngModel)]="product.quantity" [ngModelOptions]="{standalone: true}" name="type">
+          </div><br>
+          <div class="col-md-3 inline-div">
+              <span class="col-form-label">Price : </span>
+          </div>
+          <div class="col-md-6 inline-div">
+              <input type="text" class="form form-control" [(ngModel)]="product.price" [ngModelOptions]="{standalone: true}" name="desc">
+          </div><br>
+          <div class="col-md-10 inline-div">
+              <div class="col-md-5 inline-div"></div>
+              <div class="col-md-3 inline-div">
+                  <input type="submit" class="btn form-control btn-primary" value="Update">
+              </div>
+              <div class="col-md-3 inline-div">
+                  <a (click)="reset(product._id)" class="btn form-control btn-primary">Reset</a>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>

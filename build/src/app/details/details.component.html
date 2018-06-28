@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="header">
+        <h2>New Product</h2>
+    </div>
+    <div class="container">
+        <div class="col-md-3 inline-div">
+            <span class="col-form-label"> Name : </span>
+        </div>
+        <div class="col-md-6 inline-div">
+            <span class="card-body form"> {{ product.name }} </span>
+        </div>
+        <br>
+        <div class="col-md-3 inline-div">
+            <span class="col-form-label"> Quantity : </span>
+        </div>
+        <div class="col-md-6 inline-div">
+            <span class="card-body form"> {{ product.quantity }} </span>
+        </div>
+        <br>
+        <div class="col-md-3 inline-div">
+            <span class="col-form-label">Price : </span>
+        </div>
+        <div class="col-md-6 inline-div">
+            <span class="card-body form"> {{product.price }} </span>
+        </div>
+        <br>
+        <div class="col-md-10 inline-div">
+            <div class="col-md-5 inline-div"></div>
+            <div class="col-md-3 inline-div">
+                <a [routerLink]="['/']" class="btn form-control btn-primary">Back</a>
+            </div>
+            <div class="col-md-3 inline-div">
+                <button [disabled]="disabled" (click)="delete(product._id)" class="btn form-control btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
